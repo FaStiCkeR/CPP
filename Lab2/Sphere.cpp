@@ -8,6 +8,10 @@ Sphere::Sphere(double x, double y, double z, double rOuter, double rInner, doubl
     : Circle(x, y, z, rOuter), innerRadius(rInner), density(density) {
 }
 
+Sphere::Sphere(const Sphere &other)
+    : Circle(other), innerRadius(other.innerRadius), density(other.density) {
+}
+
 double Sphere::getInnerRadius() const { return innerRadius; }
 
 double Sphere::volume() const {
@@ -34,5 +38,13 @@ void Sphere::print() const {
 double Sphere::compare(const Sphere &other) const {
     const double w1 = weight();
     const double w2 = other.weight();
-    return w1 - w2;
+    if (w1 > w2) {
+        return 1.0;
+    } else if (w1 < w2) {
+        return -1.0;
+    } else {
+        return 0.0;
+    }
 }
+
+Sphere::~Sphere() {}

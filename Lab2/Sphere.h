@@ -8,7 +8,9 @@ private:
     double density;
 
 public:
-    Sphere(double x, double y, double z, double rOuter, double rInner, double density);
+    Sphere(double x = 0, double y = 0, double z = 0, double rOuter = 1, double rInner = 0.5, double density = 1);
+
+    Sphere(const Sphere &other);
 
     double getInnerRadius() const;
 
@@ -19,6 +21,8 @@ public:
     void print() const;
 
     double compare(const Sphere &other) const;
+
+    ~Sphere() override;
 };
 
 #endif //LABS_OOP_SPHERE_H

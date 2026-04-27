@@ -33,7 +33,7 @@ private:
 
 public:
     // Конструкторы
-    Vector() : data(nullptr), size(0) {
+    Vector() : Vector(0) {
     }
 
     explicit Vector(size_t n) : data(new T[n]()), size(n) {

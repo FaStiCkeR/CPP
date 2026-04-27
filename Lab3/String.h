@@ -9,9 +9,11 @@ private:
     char *data;
 
 public:
+    String();
+
     explicit String(size_t n);
 
-    String(const char *s);
+    explicit String(const char *s);
 
     String(const String &other);
 

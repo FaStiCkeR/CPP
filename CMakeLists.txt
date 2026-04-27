@@ -3,20 +3,30 @@ project(Labs_OOP)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Labs_OOP
+add_executable(Lab1
         Lab1/Airport.h
         Lab1/Airport.cpp
         Lab1/main.cpp
-        Lab2/main.cpp
+)
+
+add_executable(Lab2
         Lab2/Dot.cpp
         Lab2/Dot.h
         Lab2/Circle.cpp
         Lab2/Circle.h
         Lab2/Sphere.cpp
         Lab2/Sphere.h
+        Lab2/Dot.cpp
+        Lab2/main.cpp
+)
+
+add_executable(Lab3
         Lab3/String.cpp
         Lab3/String.h
         Lab3/main.cpp
+)
+
+add_executable(Lab4
         Lab4/Vector.h
         Lab4/main.cpp
 )

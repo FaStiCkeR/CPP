@@ -2,8 +2,9 @@
 #include <iostream>
 using namespace std;
 
-Dot::Dot(double x, double y, double z) : x(x), y(y), z(z) {
-}
+Dot::Dot(double x, double y, double z) : x(x), y(y), z(z) {}
+
+Dot::Dot(const Dot &other) : x(other.x), y(other.y), z(other.z) {}
 
 double Dot::getX() const { return x; }
 double Dot::getY() const { return y; }
