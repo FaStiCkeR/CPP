@@ -33,6 +33,10 @@ public:
 
     bool operator>=(const String &other) const;
 
+    char& operator[](size_t index);
+
+    const char& operator[](size_t index) const;
+
     const char *c_str() const;
 };
 
