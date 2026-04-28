@@ -44,6 +44,9 @@ int main() {
     std::cout << "s1 <= s2: " << (s1 <= s2 ? "true" : "false") << std::endl;
     std::cout << "s1 >= s3: " << (s1 >= s3 ? "true" : "false") << std::endl;
 
+    std::cout << "Элемент по индексу 2 у s1 = " << s1[2] << std::endl;
+    std::cout << "Элемент по индексу 2 у s2 = " << s2[2] << std::endl;
+
     s1.clear();
     std::cout << "После очистки s1: ";
     s1.print();
